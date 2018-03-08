@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Connect Four Project</title>
+
+</head>
+<body>
+	<!-- Nave Bar -->
+	<!-- Jumbo Tron
+	-H1, 3h3, ol and ul
+ -->
+	<!--another h4 -->
+	<!-- 2 paragraphs -->
+	<!-- h3 -->
+	<!-- thumnail -->
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+			    <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+			    Play Connect Four
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			    <div class="navbar-nav">
+			    <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			    <a class="nav-item nav-link active" href="signin.html">Play</a>
+			    <a class="nav-item nav-link" href="signin.html">Sign In</a>
+			    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Dropdown link
+		        </a>
+	    	</div>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		        <a class="dropdown-item" href="#">Action</a>
+		        <a class="dropdown-item" href="#">Another action</a>
+		        <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+		</div>	
+	</nav>
+
+	<div class="container">
+		<div class="jumbotron">
+		  <h1 class="display-4">Connect Four</h1>
+		  <p class="lead">Welcome to your Bootstrap & Jquery Project: Connect Four</p>
+		 
+		  <hr class="my-4">
+		  <blockquote class="blockquote">
+			  <p class="mb-0 text-center">
+    				Object: Connect four of your checkers in a row while preventing your opponent from doing the same.
+			  </p>
+			  <footer class="blockquote-footer text-center"> Milton Bradley<cite title="Source Title">Connect Four "Pretty Sneaky, Sis" television commercial, 1977</cite></footer>
+			</blockquote>
+		  <p class="lead col-md-1 m-auto">
+		    <a class="btn btn-primary btn-lg" role="button" id="reset" style="color: white">Restart</a>
+		  </p>
+
+		  <hr class="my-4">
+
+		  <div class="container board h-100 mb-4">
+			<div class="row h-100 justify-content-center align-items-center">
+				<div class="col-md-1.5 cell_blank col0">
+					
+				</div>
+				<div class="col-md-1.5 cell_blank col1">
+					
+				</div>
+				<div class="col-md-1.5 cell_blank col2">
+					
+				</div>
+				<div class="col-md-1.5 cell_blank col3">
+					
+				</div>
+				<div class="col-md-1.5 cell_blank col4">
+					
+				</div>
+				<div class="col-md-1.5 cell_blank col5">
+					
+				</div>
+				<div class="col-md-1.5 cell_blank col6">
+					
+				</div>
+			</div>
+			<!-- Board Row 1 -->
+			<div class="row h-100 justify-content-center align-items-center">
+				<div class="col-md-1.5 cell row0 col0">
+					
+				</div>
+				<div class="col-md-1.5 cell row0 col1">
+					
+				</div>
+				<div class="col-md-1.5 cell row0 col2">
+					
+				</div>
+				<div class="col-md-1.5 cell row0 col3">
+					
+				</div>
+				<div class="col-md-1.5 cell row0 col4">
+					
+				</div>
+				<div class="col-md-1.5 cell row0 col5">
+					
+				</div>
+				<div class="col-md-1.5 cell row0 col6">
+					
+				</div>
+			</div>
+
+			<!-- Board Row 2 -->
+			<div class="row h-100 justify-content-center align-items-center">
+				<div class="col-md-1.5 cell row1 col0">
+					
+				</div>
+				<div class="col-md-1.5 cell row1 col1">
+					
+				</div>
+				<div class="col-md-1.5 cell row1 col2">
+					
+				</div>
+				<div class="col-md-1.5 cell row1 col3">
+					
+				</div>
+				<div class="col-md-1.5 cell row1 col4">
+					
+				</div>
+				<div class="col-md-1.5 cell row1 col5">
+					
+				</div>
+				<div class="col-md-1.5 cell row1 col6">
+					
+				</div>
+			</div>
+
+			<!-- Board Row 3 -->
+			<div class="row h-100 justify-content-center align-items-center">
+				<div class="col-md-1.5 cell row2 col0">
+					
+				</div>
+				<div class="col-md-1.5 cell row2 col1">
+					
+				</div>
+				<div class="col-md-1.5 cell row2 col2">
+					
+				</div>
+				<div class="col-md-1.5 cell row2 col3">
+
+				</div>
+				<div class="col-md-1.5 cell row2 col4">
+
+				</div>
+				<div class="col-md-1.5 cell row2 col5">
+
+				</div>
+				<div class="col-md-1.5 cell row2 col6">
+
+				</div>
+			</div>
+
+			<!-- Board Row 4 -->
+			<div class="row h-100 justify-content-center align-items-center">
+				<div class="col-md-1.5 cell row3 col0">
+					
+				</div>
+				<div class="col-md-1.5 cell row3 col1">
+					
+				</div>
+				<div class="col-md-1.5 cell row3 col2">
+					
+				</div>
+				<div class="col-md-1.5 cell row3 col3">
+					
+				</div>
+				<div class="col-md-1.5 cell row3 col4">
+					
+				</div>
+				<div class="col-md-1.5 cell row3 col5">
+					
+				</div>
+				<div class="col-md-1.5 cell row3 col6">
+					
+				</div>
+			</div>
+
+			<!-- Board Row 5 -->
+			<div class="row h-100 justify-content-center align-items-center">
+				<div class="col-md-1.5 cell row4 col0">
+					
+				</div>
+				<div class="col-md-1.5 cell row4 col1">
+					
+				</div>
+				<div class="col-md-1.5 cell row4 col2">
+					
+				</div>
+				<div class="col-md-1.5 cell row4 col3">
+					
+				</div>
+				<div class="col-md-1.5 cell row4 col4">
+					
+				</div>
+				<div class="col-md-1.5 cell row4 col5">
+					
+				</div>
+				<div class="col-md-1.5 cell row4 col6">
+					
+				</div>
+			</div>
+
+			<!-- Board Row 6 -->
+			<div class="row h-100 justify-content-center align-items-center">
+				<div class="col-md-1.5 cell row5 col0">
+					
+				</div>
+				<div class="col-md-1.5 cell row5 col1">
+					
+				</div>
+				<div class="col-md-1.5 cell row5 col2">
+					
+				</div>
+				<div class="col-md-1.5 cell row5 col3">
+					
+				</div>
+				<div class="col-md-1.5 cell row5 col4">
+					
+				</div>
+				<div class="col-md-1.5 cell row5 col5">
+					
+				</div>
+				<div class="col-md-1.5 cell row5 col6">
+					
+				</div>
+			</div>
+
+
+
+		</div><!-- End Board -->
+		</div><!-- Jumbotron ends -->
+
+		<!-- Board -->
+		
+		
+		<div style=" height: 20px; margin-bottom: 50px">
+			
+		</div>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/script.js"></script>
+</body> 
+</html>
+
+

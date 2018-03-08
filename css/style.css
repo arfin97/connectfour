@@ -1,0 +1,20 @@
+.cell_blank{
+	background: white;
+	height: 140px;
+	width: 140px;
+	border: 7px solid #dee2e6 !important;
+	border-radius: 300px;
+}
+
+
+.cell{
+	background: #f4f4f2;
+	height: 140px;
+	width: 140px;
+	border: 10px solid #dee2e6 !important;
+	border-radius: 300px;
+}
+
+.border {
+  border: 5px solid #dee2e6 !important;
+}
